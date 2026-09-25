@@ -353,6 +353,7 @@ const playlist = [
     { title: "Dalangin", artist: "Earl Agustin", src: "music/dalangin.mp3", highlightTime: 52.5 },
     { title: "Libu-Libong Buwan", artist: "Kyle Raphael", src: "music/libu-libongbuwan.mp3", highlightTime: 72 },
     { title: "Sa Bawat Sandali", artist: "Amiel Sol", src: "music/sabawatsandali.mp3", highlightTime: 160 },
+    { title: "Palayo Sa Mundo", artist: "Arthur Nery & Julianne", src: "music/palayosamundo.mp3", highlightTime: 170.5 },
     { title: "Totoong Tayo", artist: "Jin DC", src: "music/totoongtayo.mp3", highlightTime: 45.7 },
     { title: "Larawan", artist: "JRoa ft. Flow G", src: "music/larawan.mp3", highlightTime: 236.5 }
 ];
