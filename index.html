@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for my bestie 💜</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Floating Background Elements -->
+    <div class="bg-animation">
+        <span>💜</span>
+        <span>✨</span>
+        <span>💜</span>
+        <span>✨</span>
+        <span>💜</span>
+        <span>✨</span>
+    </div>
+
+    <div class="container">
+        
+        <!-- ================= PAGE 1: LANDING ================= -->
+        <div id="page-landing" class="page active">
+            <div class="bear-icon">🧸</div>
+            <h1>Hiii, Aizel, OA, Maldita, my Bestie!</h1>
+            <div class="subtitle">wanna see my gift?</div>
+            <div class="btn-group">
+                <button class="btn" onclick="showPage('page-menu')">YES LOVIZ</button>
+                <button class="btn" onclick="showPage('page-no')">NO THANKS</button>
+            </div>
+        </div>
+
+        <!-- ================= PAGE 2: NO THANKS (SAD FACE) ================= -->
+        <div id="page-no" class="page">
+            <div class="sad-face-container">
+                <div class="blush-marks">
+                    <div class="blush"></div>
+                    <div class="blush"></div>
+                </div>
+                <div class="sad-eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="sad-mouth"></div>
+            </div>
+            <div class="sad-text">u sure, bes? i'm sure you'll love it :(</div>
+            <button class="btn" onclick="showPage('page-landing')">back</button>
+        </div>
+
+        <!-- ================= PAGE 3: THE 3 CLICKABLE OPTIONS ================= -->
+        <div id="page-menu" class="page">
+            <div class="cards-header">pick and click!</div>
+            <div class="cards-wrapper">
+                <div class="card" onclick="showPage('page-gallery')">
+                    <div class="card-icon">🖼️</div>
+                </div>
+                <div class="card" onclick="showPage('page-letter')">
+                    <div class="card-icon">💌</div>
+                </div>
+                <div class="card" onclick="showPage('page-flowers-music')">
+                    <div class="card-icon">💐</div>
+                </div>
+            </div>
+            <div class="cards-footer">i hope you'll love them, bes! &lt;3</div>
+        </div>
+
+        <!-- ================= PAGE 4: GALLERY SUB-PAGE ================= -->
+        <div id="page-gallery" class="page">
+            <header class="gallery-header">
+                <button class="header-btn" onclick="showPage('page-menu')">← back</button>
+                <button class="header-btn" id="gridToggleBtn" onclick="toggleGridView()">🖼️ Show All</button>
+            </header>
+
+            <div id="carouselView" class="view-mode active">
+                <h2 class="section-title">my gallery cuz of You</h2>
+                <div class="carousel-box">
+                    <button class="nav-arrow" onclick="prevPhoto()">&#10094;</button>
+                    <div class="polaroid-frame">
+                        <div class="image-wrapper" id="imageWrapper">
+                            <img id="mainPhoto" src="" alt="Memory">
+                        </div>
+                        <div class="photo-date" id="photoDate">Memory #1</div>
+                    </div>
+                    <button class="nav-arrow" onclick="nextPhoto()">&#10095;</button>
+                </div>
+                <div class="thumbnail-strip" id="thumbnailStrip"></div>
+            </div>
+
+            <div id="gridView" class="view-mode">
+                <h2 class="section-title">all our memories so far</h2>
+                <div class="full-grid-container" id="fullGridContainer"></div>
+            </div>
+        </div>
+
+<!-- ================= PAGE 5: LETTER SUB-PAGE ================= -->
+        <div id="page-letter" class="page">
+            <button class="header-btn" style="position:absolute; top:20px; left:20px;" onclick="showPage('page-menu')">← back</button>
+            <h2 class="section-title">a letter for you 💌</h2>
+            
+            <div class="letter-container-wrapper">
+                <div id="letterLockNotice" class="letter-lock-notice" style="display: none;">
+                    <div class="countdown-timer-box">
+                        <div class="time-segment"><span id="cdDays">00</span><small>Days</small></div>
+                        <span class="time-colon">:</span>
+                        <div class="time-segment"><span id="cdHours">00</span><small>Hours</small></div>
+                        <span class="time-colon">:</span>
+                        <div class="time-segment"><span id="cdMins">00</span><small>Mins</small></div>
+                        <span class="time-colon">:</span>
+                        <div class="time-segment"><span id="cdSecs">00</span><small>Secs</small></div>
+                    </div>
+                </div>
+                <div class="letter-box" id="letterBoxContent">
+                    <p class="letter-text">
+                        My dearest Maldita,
+                        <br><br>
+                        Happy Birthday.
+                        <br><br>
+                        Ambot lang kung mabasa ni nimo or dili pero bisan pa man sa tanan nga nahitabo, sa mga pagsuway, ug sa kung asa man nato gidala ang atong mga dalan karon, gi-desisyunan gihapon nako nga humanon kining website ug kining sulat para lang unta sa imong special nga adlaw. Giandam nako ni daan gikan sa atong mga panumduman sa gallery hangtod sa mga kantang nagpabalik sa atong mga istorya, dili para pugson kag balik o mag demand pa og bisan unsa, kundi aron makita nimo nga bisan pa man sa akong pag undang ug pag surrender, ang akong care ug pagrespeto ka nimo tinuod gihapon.
+                        <br><br>
+                        Wala ko nagmahay sa mga panahon nga nag uban ta, sa mga tawa, ug sa mga lessons nga akong learn tungod nimo. Sa adlaw sa imong natawhan, ang pinakadako nako nga panghinaut para nimo mao ang kalinaw sa kasingkasing ug ang kalampusan sa tanan nimong gipangandoy.
+                        <br><br>
+                        Unta, padayon kang mag-amping sa imong trabaho. Ayaw pasagdi imong kaugalingon, likayi ang mga butang nga makadaot nimo, ug barugi ang imong dignidad bisan asa ka man padulong. Puhon, makabalik ka sa eskwelahan para ma-pursue nimo ang imong BS Accountancy ug maabot nimo ang imong mga kinabuhi para sa imong pamilya. Kabalo ko nga kaya nimo na bastamo lang mag focus kag tarung.
+                        <br><br>
+                        Dinhi na kutob ang atong message, ug gihatag nako kini nga katapusan nga basahon para malimpiyo na ang atong mga konsensya ug magpabilin na lang ang mga maayong panumduman. You might be my greatest lesson, but today, I just want you to have a happy and peaceful birthday.
+                        <br><br>
+                        Amping kanunay, Aizel &lt;3
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= PAGE 6: POLAROID & MULTI-SONG MUSIC PLAYER ================= -->
+        <div id="page-flowers-music" class="page">
+            <div class="top-bar-row">
+                <button class="header-btn" onclick="showPage('page-menu')">← back</button>
+                <div class="wavy-header-text">
+                    <span>S</span><span>o</span><span>n</span><span>g</span><span>s</span> 
+                    <span>t</span><span>h</span><span>a</span><span>t</span> 
+                    <span>r</span><span>e</span><span>m</span><span>i</span><span>n</span><span>d</span> 
+                    <span>u</span><span>s</span>
+                </div>
+            </div>
+
+            <div class="content-split-wrapper">
+                
+                <!-- LEFT SIDE: Balanced Polaroid Photo with Note & IMYSB Button -->
+                <div class="flower-photo-section">
+                    <div class="polaroid-card">
+                        <div class="photo-container">
+                            <img src="photos/flower1.png" alt="Special Photo" id="polaroidImage">
+                            <div class="art-placeholder-text" id="polaroidPlaceholder" style="display: none;">
+                                <span>🖼️</span>
+                                <p>(Put your photo here)</p>
+                            </div>
+                        </div>
+                        <div class="polaroid-caption-area">
+                            <div class="polaroid-caption-note">
+                                "If loving you means watching from afar, I'd choose that over losing you entirely."
+                            </div>
+                            <a href="https://jmng1.github.io/maldita/" target="_blank" class="imysb-btn">IMYSB</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE: Working Playlist Music Player -->
+                <div class="music-player-phone">
+                    <div class="phone-speaker-notch"></div>
+                    
+                    <div class="phone-screen">
+                        <audio id="audioPlayer" preload="auto"></audio>
+
+                        <div class="album-art-screen">
+                            <img src="photos/holding-hands.jpg" alt="Album Art" id="playerArtImage">
+                            <div class="art-placeholder-text" id="artPlaceholder">
+                                <span>🧸</span>
+                                <p>(Album Art)</p>
+                            </div>
+                        </div>
+
+                        <div class="track-info">
+                            <div class="track-title" id="trackTitle">Song Title</div>
+                            <div class="track-artist" id="trackArtist">Artist Name</div>
+                        </div>
+
+                        <div class="player-progress-container" onclick="seekAudio(event)" id="progressContainer">
+                            <div class="progress-bar" id="progressBar"></div>
+                            <div class="highlight-checkpoint" id="highlightDot" title="itremindsmeofu"></div>
+                        </div>
+                        <div class="time-stamps">
+                            <span id="currentTime">0:00</span>
+                            <span id="durationTime">-0:00</span>
+                        </div>
+
+                        <div class="player-controls">
+                            <button class="control-btn skip-btn" onclick="prevSong()">⏮</button>
+                            <button class="control-btn play-pause-btn" id="playPauseBtn" onclick="togglePlayMusic()">
+                                <span id="playIcon">▶</span>
+                            </button>
+                            <button class="control-btn skip-btn" onclick="nextSong()">⏭</button>
+                        </div>
+
+                        <div class="volume-box">
+                            <span>🔈</span>
+                            <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="1" onchange="setVolume(this.value)">
+                            <span>🔊</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
