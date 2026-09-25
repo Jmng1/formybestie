@@ -12,7 +12,7 @@ function checkLetterLock() {
     
     // Set target date: October 28 of current year (or next year if passed)
     const currentYear = new Date().getFullYear();
-    const targetDate = new Date(`September 1, ${currentYear} 00:00:00`);
+    const targetDate = new Date(`October 28, ${currentYear} 00:00:00`);
     const now = new Date();
 
     if (letterBox && lockNotice) {
